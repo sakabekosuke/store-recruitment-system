@@ -8,7 +8,8 @@ Googleフォーム × Google Apps Script
 「今日やるべきこと」
 を数秒で判断できる採用管理システム
 
-<img width="1183" height="715" alt="image" src="https://github.com/user-attachments/assets/44c8f517-3a2d-45f6-baf0-714b53522e3c" />
+<img width="1536" height="1024" alt="ChatGPT Image 2026年7月10日 16_41_15" src="https://github.com/user-attachments/assets/127bd857-6b81-44f5-aaa4-3f3b8fc13397" />
+
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
