@@ -67,27 +67,10 @@ Google Apps Script
 
 # システム構成
 
-```
-応募者
-    │
-    ▼
-Googleフォーム
-    │
-    ▼
-応募データ
-    │
-    ▼
-Apps Script
-    │
-    ▼
-採用管理
-    │
-    ▼
-ダッシュボード
-```
+応募からダッシュボード表示までのデータフローと、
+本システム全体の構成イメージです。
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1b2afd21-bd9b-4bae-b4d5-7e4a00941f64" />
-
+![店舗採用システム](assets/採用システムフロー.png)
 
 ---
 
