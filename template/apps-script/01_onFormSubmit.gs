@@ -94,6 +94,53 @@ function onFormSubmit(e) {
 
   ]);
 
+
+  // ==========================================================
+  // メール通知
+  // ==========================================================
+
+  if (MAIL.ENABLE) {
+
+    const manageSheetUrl =
+      spreadsheet.getUrl() + "#gid=" + manageSheet.getSheetId();
+
+    MailApp.sendEmail({
+
+      to: MAIL.TO.join(","),
+
+      subject: "【店舗採用システム】新しいアルバイト応募がありました",
+
+      body:
+`新しいアルバイト応募が届きました。
+
+━━━━━━━━━━━━━━━━━━━━
+
+■ 応募日時
+${responseSheet.getRange(lastRow, COLUMN.TIMESTAMP).getDisplayValue()}
+
+■ 氏名
+${responseSheet.getRange(lastRow, COLUMN.NAME).getValue()}
+
+■ 属性
+${responseSheet.getRange(lastRow, COLUMN.ATTRIBUTE).getValue()}
+
+■ 希望職種
+${responseSheet.getRange(lastRow, COLUMN.POSITION).getValue()}
+
+■ 電話番号
+${responseSheet.getRange(lastRow, COLUMN.PHONE).getDisplayValue()}
+
+━━━━━━━━━━━━━━━━━━━━
+
+▼ 採用管理シートはこちら
+${manageSheetUrl}
+
+※ このメールは店舗採用システムから自動送信されています。`
+
+    });
+
+  }
+
 }
 
 
